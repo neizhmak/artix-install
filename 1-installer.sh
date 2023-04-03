@@ -13,7 +13,7 @@
  basestrap /mnt base dinit linux linux-firmware grub os-prober dhcpcd wpa_supplicant wpa_supplicant-dinit
  
  fstabgen -U /mnt >> /mnt/etc/fstab
- cp /2-installer.sh /mnt/
+ cp ./2-installer.sh /mnt/
  artix-chroot /mnt /2-installer.sh
 
 # finish up
