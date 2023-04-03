@@ -65,6 +65,3 @@ echo "
 Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
 pacman -Suy
-
-# finish up
-exit
