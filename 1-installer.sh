@@ -10,7 +10,7 @@ mkdir /mnt/home
 mount /dev/disk/by-label/HOME /mnt/home
 
 # install system
-basestrap /mnt base dinit seatd-dinit linux linux-firmware grub os-prober dhcpcd wpa_supplicant wpa_supplicant-dinit
+basestrap /mnt base seatd-dinit linux linux-firmware grub os-prober dhcpcd-dinit wpa_supplicant-dinit
  
 fstabgen -U /mnt >> /mnt/etc/fstab
 cp ./2-installer.sh /mnt/
