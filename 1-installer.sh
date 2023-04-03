@@ -14,6 +14,7 @@ basestrap /mnt base dinit seatd-dinit linux linux-firmware grub os-prober dhcpcd
  
 fstabgen -U /mnt >> /mnt/etc/fstab
 cp ./2-installer.sh /mnt/
+chmod 777 /mnt/2-installer.sh
 artix-chroot /mnt /2-installer.sh
 
 # finish up
